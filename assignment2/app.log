@@ -1,0 +1,30 @@
+[2025-06-24 21:09:42] USER: admin - ENTERING METHOD: UserController.getAllUsers() - ARGS: []
+[2025-06-24 21:09:42] USER: admin - ENTERING METHOD: UserService.getAllUsers() - ARGS: []
+[2025-06-24 21:09:42] USER: admin - ENTERING METHOD: UserRepo.getAll() - ARGS: []
+[2025-06-24 21:09:42] USER: admin - EXITING METHOD: UserRepo.getAll() - RETURN: []
+[2025-06-24 21:09:42] USER: admin - EXITING METHOD: UserService.getAllUsers() - RETURN: []
+[2025-06-24 21:09:42] USER: admin - EXITING METHOD: UserController.getAllUsers() - RETURN: []
+[2025-06-24 21:16:55] USER: admin - ENTERING METHOD: UserController.registerUser(..) - ARGS: [com.example.assignment2.Entity.User@17704530]
+[2025-06-24 21:16:55] USER: admin - ENTERING METHOD: UserService.registerUser(..) - ARGS: [com.example.assignment2.Entity.User@17704530]
+[2025-06-24 21:16:55] USER: admin - ENTERING METHOD: UserRepo.addUser(..) - ARGS: [com.example.assignment2.Entity.User@17704530]
+[2025-06-24 21:16:55] USER: admin - EXCEPTION in METHOD: UserRepo.addUser(..) - ERROR: Cannot read field "id" because "user.role" is null
+[2025-06-24 21:16:55] USER: admin - EXCEPTION in METHOD: UserService.registerUser(..) - ERROR: Cannot read field "id" because "user.role" is null
+[2025-06-24 21:16:55] USER: admin - EXCEPTION in METHOD: UserController.registerUser(..) - ERROR: Cannot read field "id" because "user.role" is null
+[2025-06-24 21:17:40] USER: admin - ENTERING METHOD: UserController.registerUser(..) - ARGS: [com.example.assignment2.Entity.User@5c8a16a5]
+[2025-06-24 21:17:40] USER: admin - ENTERING METHOD: UserService.registerUser(..) - ARGS: [com.example.assignment2.Entity.User@5c8a16a5]
+[2025-06-24 21:17:40] USER: admin - ENTERING METHOD: UserRepo.addUser(..) - ARGS: [com.example.assignment2.Entity.User@5c8a16a5]
+[2025-06-24 21:17:41] USER: admin - EXCEPTION in METHOD: UserRepo.addUser(..) - ERROR: PreparedStatementCallback; bad SQL grammar [INSERT INTO users (username, password, email, role_id) VALUES (?, ?, ?, ?)]
+[2025-06-24 21:17:41] USER: admin - EXCEPTION in METHOD: UserService.registerUser(..) - ERROR: PreparedStatementCallback; bad SQL grammar [INSERT INTO users (username, password, email, role_id) VALUES (?, ?, ?, ?)]
+[2025-06-24 21:17:41] USER: admin - EXCEPTION in METHOD: UserController.registerUser(..) - ERROR: PreparedStatementCallback; bad SQL grammar [INSERT INTO users (username, password, email, role_id) VALUES (?, ?, ?, ?)]
+[2025-06-24 21:17:55] USER: admin - ENTERING METHOD: UserController.registerUser(..) - ARGS: [com.example.assignment2.Entity.User@2c26dde1]
+[2025-06-24 21:17:55] USER: admin - ENTERING METHOD: UserService.registerUser(..) - ARGS: [com.example.assignment2.Entity.User@2c26dde1]
+[2025-06-24 21:17:55] USER: admin - ENTERING METHOD: UserRepo.addUser(..) - ARGS: [com.example.assignment2.Entity.User@2c26dde1]
+[2025-06-24 21:17:55] USER: admin - EXCEPTION in METHOD: UserRepo.addUser(..) - ERROR: PreparedStatementCallback; bad SQL grammar [INSERT INTO users (username, password, email, role_id) VALUES (?, ?, ?, ?)]
+[2025-06-24 21:17:55] USER: admin - EXCEPTION in METHOD: UserService.registerUser(..) - ERROR: PreparedStatementCallback; bad SQL grammar [INSERT INTO users (username, password, email, role_id) VALUES (?, ?, ?, ?)]
+[2025-06-24 21:17:55] USER: admin - EXCEPTION in METHOD: UserController.registerUser(..) - ERROR: PreparedStatementCallback; bad SQL grammar [INSERT INTO users (username, password, email, role_id) VALUES (?, ?, ?, ?)]
+[2025-06-24 21:18:55] USER: admin - ENTERING METHOD: UserController.registerUser(..) - ARGS: [com.example.assignment2.Entity.User@2ab21f08]
+[2025-06-24 21:18:55] USER: admin - ENTERING METHOD: UserService.registerUser(..) - ARGS: [com.example.assignment2.Entity.User@2ab21f08]
+[2025-06-24 21:18:55] USER: admin - ENTERING METHOD: UserRepo.addUser(..) - ARGS: [com.example.assignment2.Entity.User@2ab21f08]
+[2025-06-24 21:18:55] USER: admin - EXITING METHOD: UserRepo.addUser(..) - RETURN: null
+[2025-06-24 21:18:55] USER: admin - EXITING METHOD: UserService.registerUser(..) - RETURN: null
+[2025-06-24 21:18:55] USER: admin - EXITING METHOD: UserController.registerUser(..) - RETURN: null
