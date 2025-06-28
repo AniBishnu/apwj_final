@@ -3,13 +3,13 @@ package com.example.Vitascript.Entity;
 public class Doctor {
     public int id;
     public int userId;
-    public int doctorTypeId;
+    public String doctorType;
     public String licenseNumber;
 
-    public Doctor(int id, int userId, int doctorTypeId, String licenseNumber) {
+    public Doctor(int id, int userId, String doctorType, String licenseNumber) {
         this.id = id;
         this.userId = userId;
-        this.doctorTypeId = doctorTypeId;
+        this.doctorType = doctorType;
         this.licenseNumber = licenseNumber;
     }
 
@@ -29,12 +29,12 @@ public class Doctor {
         this.userId = userId;
     }
 
-    public int getDoctorTypeId() {
-        return doctorTypeId;
+    public String getDoctorTypeId() {
+        return doctorType;
     }
 
-    public void setDoctorTypeId(int doctorTypeId) {
-        this.doctorTypeId = doctorTypeId;
+    public void setDoctorTypeId(String doctorTypeId) {
+        this.doctorType = doctorTypeId;
     }
 
     public String getLicenseNumber() {

@@ -9,10 +9,11 @@ public class Appointment {
     public int patientAge;
     public String patientGender;
     public String patientPhone;
-    public int doctorId;
+    public int doctorId;// FK to User (roleId = DOCTOR)
+    public int patientId; // FK to User (roleId = PATIENT)
     public LocalDateTime apointmentTaken;
 
-    public Appointment(int id, String patientName, int patientAge, String patientGender, String patientPhone, int doctorId) {
+    public Appointment(int id, String patientName, int patientAge, String patientGender, String patientPhone, int doctorId,int patientId) {
         this.id = id;
         this.patientName = patientName;
         this.patientAge = patientAge;
@@ -20,6 +21,7 @@ public class Appointment {
         this.patientPhone = patientPhone;
         this.doctorId = doctorId;
         this.apointmentTaken=LocalDateTime.now();
+        this.patientId=patientId;
     }
 
     public int getId() {
@@ -72,6 +74,14 @@ public class Appointment {
 
     public LocalDateTime getApointmentTaken() {
         return apointmentTaken;
+    }
+
+    public int getPatientId() {
+        return patientId;
+    }
+
+    public void setPatientId(int patientId) {
+        this.patientId = patientId;
     }
 }
 

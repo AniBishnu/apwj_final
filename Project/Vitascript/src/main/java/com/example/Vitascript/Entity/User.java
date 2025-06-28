@@ -11,10 +11,10 @@ public class User {
     public String email;
     public String address;
     public LocalDate dob;
-    public int roleId;
+    public Role role;
     public LocalDateTime createdTime;
 
-    public User(int id, String name, String password, String phone, String email, String address, LocalDate dob, int roleId) {
+    public User(int id, String name, String password, String phone, String email, String address, LocalDate dob, Role role) {
         this.id = id;
         this.name = name;
         this.password = password;
@@ -22,7 +22,7 @@ public class User {
         this.email = email;
         this.address = address;
         this.dob = dob;
-        this.roleId = roleId;
+        this.role = role;
         this.createdTime=LocalDateTime.now();
     }
 
@@ -82,12 +82,12 @@ public class User {
         this.dob = dob;
     }
 
-    public int getRoleId() {
-        return roleId;
+    public Role getRole() {
+        return role;
     }
 
-    public void setRoleId(int roleId) {
-        this.roleId = roleId;
+    public void setRoleId(Role role) {
+        this.role = role;
     }
 
     public LocalDateTime getCreatedTime() {
