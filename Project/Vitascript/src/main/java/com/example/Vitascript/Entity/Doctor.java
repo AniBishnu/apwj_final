@@ -6,6 +6,7 @@ public class Doctor {
     public String doctorType;
     public String licenseNumber;
 
+    public Doctor(){}
     public Doctor(int id, int userId, String doctorType, String licenseNumber) {
         this.id = id;
         this.userId = userId;
