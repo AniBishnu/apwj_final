@@ -14,7 +14,6 @@ public class User {
     public Role role;
     public LocalDateTime createdTime;
 
-    public User() {}
 
     public User(int id, String name, String password, String phone, String email, String address, LocalDate dob, Role role) {
         this.id = id;

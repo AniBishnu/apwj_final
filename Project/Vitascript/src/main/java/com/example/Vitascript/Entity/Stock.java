@@ -5,14 +5,12 @@ public class Stock {
     public int pharmacyId;        // FK to Pharmacy
     public int brandedMedicineId; // FK to BrandedMedicine
     public int quantity;
-    public int threshold;
 
-    public Stock(int id, int pharmacyId, int brandedMedicineId, int quantity, int threshold) {
+    public Stock(int id, int pharmacyId, int brandedMedicineId, int quantity) {
         this.id = id;
         this.pharmacyId = pharmacyId;
         this.brandedMedicineId = brandedMedicineId;
         this.quantity = quantity;
-        this.threshold = threshold;
     }
 
     public int getId() {
@@ -45,13 +43,5 @@ public class Stock {
 
     public void setQuantity(int quantity) {
         this.quantity = quantity;
-    }
-
-    public int getThreshold() {
-        return threshold;
-    }
-
-    public void setThreshold(int threshold) {
-        this.threshold = threshold;
     }
 }

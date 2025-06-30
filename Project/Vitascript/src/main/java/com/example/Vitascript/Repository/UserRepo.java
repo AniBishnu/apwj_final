@@ -1,6 +1,6 @@
 package com.example.Vitascript.Repository;
 
-import com.example.Vitascript.Entity.User;
+import com.example.Vitascript.Entity.*;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
