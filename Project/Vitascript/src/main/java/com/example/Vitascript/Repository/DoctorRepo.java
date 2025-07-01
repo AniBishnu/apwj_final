@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 import java.util.List;
 
 @Repository
-class DoctorRepo {
+public class DoctorRepo {
     private final JdbcTemplate jdbc;
 
     private final String GetAll = "SELECT * FROM doctor";

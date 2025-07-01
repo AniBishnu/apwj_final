@@ -14,8 +14,9 @@ public class BrandedMedicineRepo {
 
     public String GetAll = "SELECT * FROM branded_medicine";
     public String GetByGenericId = "SELECT * FROM branded_medicine WHERE generic_medicine_id=?";
-    public String AddOne = "INSERT INTO branded_medicine (name, generic_medicine_id, brand_name, buying_price, mrp) VALUES (?, ?, ?, ?, ?)";
-    public String Update = "UPDATE branded_medicine SET name=?, brand_name=?, buying_price=?, mrp=? WHERE id=?";
+    public String AddOne = "INSERT INTO branded_medicine (name, generic_medicine_id, brand_name, buying_price, mrp,quantity) VALUES (?, ?,?, ?, ?, ?)";
+    public String Update = "UPDATE branded_medicine SET name=?, brand_name=?, buying_price=?, mrp=? ,quantity=? WHERE id=?";
+    private final String GetById = "SELECT * FROM branded_medicine WHERE id=?";
 
     public BrandedMedicineRepo(DataSource dataSource) {
         this.jdbc = new JdbcTemplate(dataSource);
@@ -35,5 +36,9 @@ public class BrandedMedicineRepo {
 
     public void update(BrandedMedicine bm) {
         jdbc.update(Update, bm.getName(), bm.getBrandName(), bm.getBuyingPrice(), bm.getMrp(), bm.getId());
+    }
+
+    public BrandedMedicine getById(int id) {
+        return jdbc.queryForObject(GetById, new Object[]{id}, new BeanPropertyRowMapper<>(BrandedMedicine.class));
     }
 }
