@@ -7,14 +7,16 @@ public class BrandedMedicine {
     public String brandName;
     public int buyingPrice;
     public int mrp;
+    public int Quantity;
 
-    public BrandedMedicine(int id, String name, int genericMedicineId, String brandName, int buyingPrice, int mrp) {
+    public BrandedMedicine(int id, String name, int genericMedicineId, String brandName, int buyingPrice, int mrp,int Quantity) {
         this.id = id;
         this.name = name;
         this.genericMedicineId = genericMedicineId;
         this.brandName = brandName;
         this.buyingPrice = buyingPrice;
         this.mrp = mrp;
+        this.Quantity=Quantity;
     }
 
     public int getId() {
@@ -63,5 +65,13 @@ public class BrandedMedicine {
 
     public void setMrp(int mrp) {
         this.mrp = mrp;
+    }
+
+    public int getQuantity() {
+        return Quantity;
+    }
+
+    public void setQuantity(int quantity) {
+        Quantity = quantity;
     }
 }

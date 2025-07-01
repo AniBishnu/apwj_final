@@ -8,6 +8,7 @@ public class PrescribedMedicine {
     public int duration;
     public String notes;
     public int quantity;
+    public int quantityLeft;
 
     public PrescribedMedicine(int id, int prescriptionId, int genericMedicineId, String dose, int duration, String notes, int quantity) {
         this.id = id;
@@ -17,6 +18,7 @@ public class PrescribedMedicine {
         this.duration = duration;
         this.notes = notes;
         this.quantity = quantity;
+        this.quantityLeft=quantity;
     }
 
     public int getId() {
@@ -74,5 +76,10 @@ public class PrescribedMedicine {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    public int getQuantityLeft() {
+        return quantityLeft;
+    }
+
 }
 

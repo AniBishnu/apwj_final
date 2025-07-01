@@ -1,6 +1,8 @@
 package com.example.Vitascript.Entity;
 
 public enum Role {
-    id,
-    name;
+    Doctor,
+    Patient,
+    Pharmacy,
+    Admin
 }
